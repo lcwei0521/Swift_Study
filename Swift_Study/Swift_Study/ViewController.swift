@@ -14,12 +14,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //swift 创建label
+        let textLabel = UILabel(frame:CGRectMake(100,300,200,50));
+        textLabel.text = "my first label how much words you need to show in the label";
+        textLabel.backgroundColor = UIColor.orangeColor();
+        textLabel.numberOfLines = 2;
+        textLabel.textAlignment = NSTextAlignment.Left;
+        textLabel.font = UIFont(name: nil, size: 12);
+        textLabel.textColor = UIColor(red: 10/255.0, green: 220/255.0, blue: 30/255.0, alpha: 1);
+        self.view.addSubview(textLabel);
+        
         var aLabel = UILabel(frame:CGRectMake(50,50,50,50))
         aLabel.text = "nihao"
         aLabel.backgroundColor = UIColor.redColor();
         view.addSubview(aLabel)
         
-        var aView = UIView(frame:CGRectMake(100,200,100,100));
+        var aView = UIView(frame:CGRectMake(100,200,100,50));
         aView.backgroundColor = UIColor.purpleColor();
         view.addSubview(aView);
         
