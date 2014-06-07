@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBAction func pushNext(sender : UIButton) {
+        let next : UIViewController = NextViewController.alloc();
+        self.presentViewController(next, animated: true, completion: nil);
+    }
+    @IBOutlet var bTextField : UITextField
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -166,42 +172,34 @@ class ViewController: UIViewController {
         
         println(haha());
         
-        //        if hasAnyMatch(10, condition: lessThanTen)
-        //        {
-        //            println("小于")
-        //        }else
-        //        {
-        //            println("不小于")
-        //        }
+        aMethod(1, numTwo: 2);
+        
+        let aaa = [1,2];
+//        hasAnyMatches(aaa, condition: lessThanTen1(3));
+        
+//        var method = increment();
+//        method(7)
+
+//        
+        var aa = increment();
+        let result = aa(6);
+        println("---->\(result)");
+        
+        
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
-    //    //函数作为参数
-    //    func hasAnyMatch(aNumber:Int,condition:Int ->Bool)->Bool
-    //    {
-    //        if condition(aNumber)
-    //        {
-    //            return true;
-    //        }
-    //        return false;
-    //    }
+    func mulReturnValue()->(Double,Double,Double)
+    {
+        return (1.11,1.22,1.33);
+    }
+    
     //比较是否小于10
     func lessThanTen(number:Int)->Bool
     {
         return number < 10;
     }
-    
-    //    func hasAnyMatches(list: Int[], condition: Int -> Bool) -> Bool {
-    //        for item in list {
-    //            if condition(item) {
-    //                return true
-    //            }
-    //        }
-    //        return false
-    //    }
-    
-    //    var numbers = [20, 19, 7, 12]
-    //    hasAnyMatches(numbers, lessThanTen)
     
     
     func haha()->String
@@ -212,6 +210,11 @@ class ViewController: UIViewController {
     func sayHello(name:String,toName:String)-> String
     {
         return "\(name) sayHello \(toName)";
+    }
+    
+    func aMethod(numOne:Int,numTwo:Int)->Int
+    {
+        return numOne + numTwo;
     }
     
     func getData()->(Int,Double,Double)
@@ -240,6 +243,27 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    //返回函数
+    func increment()->((Int) -> Int)
+    {
+        func addOne(number:Int)->Int{
+            return number + 1;
+        }
+        return addOne;
+    }
+    
+    func hasAnyMatches(list: Int[], condition: (Int) -> Bool) -> Bool {
+        for item in list {
+            if condition(item) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func lessThanTen1(number: Int) -> Bool {
+        return number < 10 
     }
 
 

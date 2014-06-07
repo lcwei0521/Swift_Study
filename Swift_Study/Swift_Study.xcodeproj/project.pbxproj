@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131FD8E819416F8900BDF8F2 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FD8E619416F8900BDF8F2 /* NextViewController.swift */; };
+		131FD8E919416F8900BDF8F2 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131FD8E719416F8900BDF8F2 /* NextViewController.xib */; };
 		139DDA1719415B7700F8D46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DDA1619415B7700F8D46E /* AppDelegate.swift */; };
 		139DDA1919415B7700F8D46E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DDA1819415B7700F8D46E /* ViewController.swift */; };
 		139DDA1C19415B7700F8D46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139DDA1A19415B7700F8D46E /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		131FD8E619416F8900BDF8F2 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		131FD8E719416F8900BDF8F2 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 		139DDA1119415B7700F8D46E /* Swift_Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139DDA1519415B7700F8D46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		139DDA1619415B7700F8D46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				139DDA1619415B7700F8D46E /* AppDelegate.swift */,
 				139DDA1819415B7700F8D46E /* ViewController.swift */,
 				139DDA1A19415B7700F8D46E /* Main.storyboard */,
+				131FD8E619416F8900BDF8F2 /* NextViewController.swift */,
+				131FD8E719416F8900BDF8F2 /* NextViewController.xib */,
 				139DDA1D19415B7700F8D46E /* Images.xcassets */,
 				139DDA1419415B7700F8D46E /* Supporting Files */,
 			);
@@ -189,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131FD8E919416F8900BDF8F2 /* NextViewController.xib in Resources */,
 				139DDA1C19415B7700F8D46E /* Main.storyboard in Resources */,
 				139DDA1E19415B7700F8D46E /* Images.xcassets in Resources */,
 			);
@@ -209,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				139DDA1919415B7700F8D46E /* ViewController.swift in Sources */,
+				131FD8E819416F8900BDF8F2 /* NextViewController.swift in Sources */,
 				139DDA1719415B7700F8D46E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +333,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				INFOPLIST_FILE = Swift_Study/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -336,7 +347,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				INFOPLIST_FILE = Swift_Study/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -397,6 +411,7 @@
 				139DDA2F19415B7700F8D46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		139DDA3019415B7700F8D46E /* Build configuration list for PBXNativeTarget "Swift_StudyTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +420,7 @@
 				139DDA3219415B7700F8D46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
